@@ -1,0 +1,20 @@
+name: "simple ci/cd demo"
+
+on:
+push:
+branches:
+- dev
+
+jobs:
+job1:
+runs-on: ubuntu-latest
+steps:
+- name: Print hello
+run: echo "hello world"
+
+job2:
+needs: job1
+runs-on: ubuntu-latest
+steps:
+- name: Print hello again
+run: echo "hello world33"
