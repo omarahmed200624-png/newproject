@@ -1,9 +1,9 @@
 name: "simple ci/cd demo"
 
 on:
-push:
-branches:
-- dev
+  push:
+    branches:
+      - dev
 
 jobs:
   job1:
